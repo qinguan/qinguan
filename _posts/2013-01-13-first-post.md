@@ -2,7 +2,11 @@
 layput: default
 title: hello world
 ---
-
+<nav>
+	{% if page.previous %}<a rel="prev" href="{{ page.previous.url }}">&larr; previous</a>{% endif %}
+	{% if page.next %}<a rel="next" href="{{ page.next.url }}">next &rarr;</a>{% endif %}
+</nav>
 {{ page.title }}
 {{page.date | date_to_string }}
+
 ÄãºÃ£¡£¡£¡
