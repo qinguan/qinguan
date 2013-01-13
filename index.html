@@ -6,7 +6,7 @@ title: My Blog
 <ol class="content">
 	{% for post in site.posts limit:5 %}
 		<span class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span>
-		<p/>
 		<time class="date"> {{ post.date | date_to_string }}</time>
+		<p/>
 	{% endfor %}
 </ol>
