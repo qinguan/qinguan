@@ -1,5 +1,5 @@
 ---
-layput: default
+layout: default
 title: hello world
 ---
 <nav>
