@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
-　　<head>
-　　　　<title>{{ page.title }}</title>
-　　</head>
-　　<body>
-　　　　{{ content }}
-　　</body>
+	<nav>
+		{% if page.previous %}<a rel="prev" href="{{ page.previous.url }}">&larr; previous</a>{% endif %}
+		{% if page.next %}<a rel="next" href="{{ page.next.url }}">next &rarr;</a>{% endif %}
+	</nav>
+	<head>
+		<title>{{ page.title }}</title>
+	</head>
+	<body>
+		{{ content }}
+	</body>
 </html>
