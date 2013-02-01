@@ -1,1 +1,2 @@
-baseurl: /qinguan
+markdown: rdiscount
+pygments: true
